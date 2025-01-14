@@ -22,6 +22,9 @@ for (const [key, element] of Object.entries(elements)) {
 
 try {
   const triggerType = btn.dataset.trigger
+
+  list.classList.add('dropdown__list--hidden')
+
   if (triggerType === 'click') {
     btn.addEventListener('click', (e) => {
       list.classList.toggle('dropdown__list--hidden')
