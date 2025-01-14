@@ -24,15 +24,15 @@ try {
   const triggerType = btn.dataset.trigger
   if (triggerType === 'click') {
     btn.addEventListener('click', (e) => {
-      list.classList.toggle('hidden')
+      list.classList.toggle('dropdown__list--hidden')
     })
   } else if (triggerType === 'hover') {
     btn.addEventListener('mouseenter', (e) => {
-      list.classList.remove('hidden')
+      list.classList.remove('dropdown__list--hidden')
     })
 
     dropdown.addEventListener('mouseleave', (e) => {
-      list.classList.add('hidden')
+      list.classList.add('dropdown__list--hidden')
     })
   } else {
     const id = dropdown.id || 'No id found'
