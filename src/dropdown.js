@@ -22,8 +22,11 @@ for (const [key, element] of Object.entries(elements)) {
 
 try {
   const triggerType = btn.dataset.trigger
+  const fade = list.hasAttribute('data-fade')
 
   list.classList.add('dropdown__list--hidden')
+
+  if (fade) list.classList.add('dropdown__list--fade')
 
   if (triggerType === 'click') {
     btn.addEventListener('click', (e) => {

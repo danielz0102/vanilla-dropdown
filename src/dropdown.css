@@ -1,3 +1,20 @@
 .dropdown__list--hidden {
   display: none;
 }
+
+.dropdown__list--fade {
+  display: none;
+  opacity: 0;
+  transition-property: opacity, display;
+  transition-duration: 0.25s;
+  transition-behavior: allow-discrete;
+
+  &:not(.dropdown__list--hidden) {
+    opacity: 1;
+    display: block;
+
+    @starting-style {
+      opacity: 0;
+    }
+  }
+}
