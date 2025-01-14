@@ -9,7 +9,7 @@
     "lint": "npx eslint . --fix",
     "format": "npx prettier . --write"
   },
-  "keywords": [],
+  "keywords": ["dropdown", "javascript", "vanilla"],
   "author": "Daniel Zambrano <danyzglez@gmail.com> (https://github.com/danielz0102)",
   "license": "ISC",
   "devDependencies": {
