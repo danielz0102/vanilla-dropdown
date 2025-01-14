@@ -1,21 +1,24 @@
 {
   "name": "vanilla-dropdown",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "A vanilla JavaScript dropdown menu setup",
-  "main": "index.js",
+  "author": "Daniel Zambrano <danyzglez@gmail.com> (https://github.com/danielz0102)",
+  "license": "ISC",
+  "main": "./src/index.js",
+  "keywords": [
+    "dropdown",
+    "javascript",
+    "vanilla"
+  ],
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "lint": "npx eslint . --fix",
     "format": "npx prettier . --write"
   },
-  "keywords": ["dropdown", "javascript", "vanilla"],
-  "author": "Daniel Zambrano <danyzglez@gmail.com> (https://github.com/danielz0102)",
-  "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "eslint-config-prettier": "^10.0.1",
-    "html-webpack-plugin": "^5.6.3",
     "prettier": "^3.4.2",
     "standard": "^17.1.2",
     "styles-loader": "^4.0.1",

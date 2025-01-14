@@ -1,4 +1,4 @@
-import '@/dropdown.css'
+import './index.css'
 
 const ERROR_MESSAGES = {
   btn: 'The element .dropdown__btn was not found',
@@ -7,7 +7,7 @@ const ERROR_MESSAGES = {
     "The trigger type selected is unknown. Please select 'click' or 'hover'.",
 }
 
-exports.setupDropdown = function (dropdown) {
+export default function setupDropdown(dropdown) {
   const btn = dropdown.querySelector('.dropdown__btn')
   const list = dropdown.querySelector('.dropdown__list')
   const elements = { btn, list }
