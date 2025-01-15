@@ -4,7 +4,7 @@ A lightweight and simple dropdown implementation built with vanilla JavaScript a
 
 ## Installation
 
-```
+```bash
 npm install vanilla-dropdown
 ```
 
@@ -12,7 +12,7 @@ npm install vanilla-dropdown
 
 First you create your dropdown menu with the following HTML structure:
 
-```
+```html
 <div class="dropdown">
   <button class="dropdown__btn" data-trigger="click">Toggle Btn</button>
   <ul class="dropdown__list" data-fade>
@@ -34,11 +34,11 @@ On the `.dropdown__btn`, you also need to specify how you want to render the men
 You can also add a fade transition when the menu is shown or hidden with the attribute **`data-fade`** on the `.dropdown__list`.
 
 > [!WARNING]
-> This fade transition use the **``@starting-style``** CSS at-rule, which does not have supoprt in Firefox yet.
+> This fade transition use the ``@starting-style`` CSS at-rule, which does not have supoprt in Firefox yet.
 
 Then, you can import the **`setupDropdown`** and pass it the dropdown you created.
 
-```
+```javascript
 import setupDropdown from 'vanilla-dropdown'
 
 const drop = document.querySelector('.dropdown')
