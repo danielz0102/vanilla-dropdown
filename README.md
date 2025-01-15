@@ -1,6 +1,6 @@
 # vanilla-dropdown
 
-A lightweight and simple dropdown implementation built with vanilla JavaScript and CSS.
+A dropdown implementation built with vanilla JavaScript and CSS.
 
 ## Installation
 
