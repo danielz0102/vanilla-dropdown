@@ -10,7 +10,7 @@ npm install vanilla-dropdown
 
 ## Usage
 
-First you create your dropdown menu with the following HTML structure:
+First, create your dropdown menu with the following HTML structure:
 
 ```html
 <div class="dropdown">
@@ -25,18 +25,18 @@ First you create your dropdown menu with the following HTML structure:
 </div>
 ```
 
-- **`.dropdown`**: The wrapper of all the dropdown menu
-- **`.dropdown__btn`**: The element responsible for toggle the menu
-- **`.dropdown__list`**: The container with the elements to be rendered
+- **`.dropdown`**: The container that wraps the entire dropdown menu
+- **`.dropdown__btn`**: The element responsible for toggling the menu
+- **`.dropdown__list`**: The container of the items to be shown
 
-On the `.dropdown__btn`, you also need to specify how you want to render the menu in the **`data-trigger`** attribute, either by `click` or `hover`.
+On the `.dropdown__btn`, you also need to specify how you want to render the menu using the **`data-trigger`** attribute, either by `click` or `hover`.
 
-You can also add a fade transition when the menu is shown or hidden with the attribute **`data-fade`** on the `.dropdown__list`.
+You can also add a fade transition when the menu is shown or hidden by using the attribute **`data-fade`** on the `.dropdown__list`.
 
 > [!WARNING]
-> This fade transition use the ``@starting-style`` CSS at-rule, which does not have supoprt in Firefox yet.
+> This fade transition uses the ``@starting-style`` CSS at-rule, which does not have support in Firefox yet.
 
-Then, you can import the **`setupDropdown`** and pass it the dropdown you created.
+Then, import the **`setupDropdown`** and pass it the dropdown you created.
 
 ```javascript
 import setupDropdown from 'vanilla-dropdown'
@@ -45,4 +45,4 @@ const drop = document.querySelector('.dropdown')
 setupDropdown(drop)
 ```
 
-Now the menu will show or hide when you interact with the button.
+Now the menu will show or hide when interacting with the button.
