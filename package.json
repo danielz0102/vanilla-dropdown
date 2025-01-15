@@ -10,6 +10,11 @@
     "javascript",
     "vanilla"
   ],
+  "files": [
+    "src/*",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
