@@ -31,6 +31,11 @@ First you create your dropdown menu with the following HTML structure:
 
 On the `.dropdown__btn`, you also need to specify how you want to render the menu in the **`data-trigger`** attribute, either by `click` or `hover`.
 
+You can also add a fade transition when the menu is shown or hidden with the attribute **`data-fade`** on the `.dropdown__list`.
+
+> [!WARNING]
+> This fade transition use the **``@starting-style``** CSS at-rule, which does not have supoprt in Firefox yet.
+
 Then, you can import the **`setupDropdown`** and pass it the dropdown you created.
 
 ```
