@@ -33,9 +33,6 @@ On the `.dropdown__btn`, you also need to specify how you want to render the men
 
 You can also add a fade transition when the menu is shown or hidden by using the attribute **`data-fade`** on the `.dropdown__list`.
 
-> [!WARNING]
-> This fade transition uses the ``@starting-style`` CSS at-rule, which does not have support in Firefox yet.
-
 Then, import the **`setupDropdown`** and pass it the dropdown you created.
 
 ```javascript
